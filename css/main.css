@@ -1,0 +1,688 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+   @font-face {
+    font-family: '911_porscharegular';
+    src: url('911porschav3-webfont.eot'); /* IE9 Compat Modes */
+    src: url('911porschav3-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('911porschav3-webfont.woff') format('woff'), /* Modern Browsers */
+    url('911porschav3-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('911porschav3-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */}
+ 
+   html{
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+   }
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+   /*==COLORS ===
+    blue: # 272838
+    orange: #CC3F0C
+    grey: #646464*/
+
+    /*Fonts
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Karla', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
+     font-family: '911_porscharegular';
+     */
+   
+html {
+    background-color: #ccc;
+    height: 100%;
+    width: 100%;
+}
+body {
+    background-color: #272838;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 1.5em; 
+    border: 10px solid #ccc;
+    color: #ccc;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+} 
+
+.wrapper-content{
+    position: relative;
+    margin: 0 auto 0;
+    max-width: 600px;
+}
+
+header{
+    margin-top: 40px;
+    display: block;
+}
+.logo{
+    display:inline-block;
+    width: 90%;
+    height:100%;
+    margin:0 auto;
+}
+
+header, .main-body {
+    justify-content: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    justify-content:space-between;
+}
+
+header, footer {
+    background-color: #272838;
+    height: 100%;
+    width: 100%;
+}
+.main-body {
+    margin-top:20px;
+    display: block;
+    height: auto;
+    width:100%;
+}
+
+h1{
+    color: #ccc;
+    display:block;
+    font-family:'Exo 2', sans-serif;
+    font-size: 1.875em;
+    line-height: 1.4em;
+    margin: 0 auto 10px;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    text-align: center;
+    }
+ p{
+        display: block;
+        line-height:1.6em;
+    }
+
+    /*===NAV STYLES ===*/
+    nav {
+        height:100%;
+        width: 100%;
+        background: none;
+        border-top: 10px double #cc3f0c;
+    
+    }
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+    nav ul li {
+        text-align: center;
+        padding: 15px 0;
+    }
+    nav ul li a {
+        color: #ccc;
+        font-size: 1.125em;
+        text-decoration:none;
+        text-transform: uppercase;
+    }
+
+    #myBtn{
+        color: #ccc;
+        font-size: 1.125em;
+        text-decoration:none;
+        text-transform: uppercase;
+        background:none;
+        border: none;
+      }
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(204,204,204); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+/* Modal Header */
+.modal-header {
+    padding: 2px 16px;
+    background-color: #272838;
+    color: #ccc;
+}
+
+/* Modal Body */
+.modal-body {
+    padding: 2px 16px;
+}
+.modal-body .email{
+    padding-left: 0;
+    text-transform: none;
+}
+/* Modal Footer */
+.modal-footer {
+    padding: 10px 16px;
+    background-color: #272838;
+    color: #ccc;
+}
+
+/* Modal Content */
+.modal-content {
+    color: #272838;
+    position: relative;
+    background-color: #ccc;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top: -300px; opacity: 0} 
+    to {top: 0; opacity: 1}
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size:36px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #cc3f0c;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ==SLIDER STYLES ==*/
+.showSlide {  
+    display: none  
+}  
+    .showSlide img {  
+        width: 100%;  
+    }  
+.slidercontainer {  
+    max-width: 1000px;  
+    position: relative;  
+    margin: auto; 
+    border-top:5px solid #ccc;
+    border-bottom: 5px solid #ccc; 
+}  
+.left, .right {  
+    cursor: pointer;  
+    position: absolute;  
+    top: 50%;  
+    width: auto;  
+    margin-top: -22px;  
+    font-size: 18px;
+    background-color: #272838;  
+    transition: 0.6s ease;  
+    border-radius: 0 3px 3px 0;  
+}  
+.right {  
+    right: 0;  
+    border-radius: 3px 0 0 3px;  
+}  
+    .left:hover, .right:hover {  
+        background-color: rgba(115, 115, 115, 0.8);  
+    }  
+.content {  
+    color: #ccc;  
+    font-size: 30px;  
+    padding: 8px 12px;  
+    position: absolute;  
+    top: 10px;  
+    width: 100%;  
+    text-align: center;  
+}  
+.active {  
+    background-color: #717171;  
+}  
+/* Fading animation */  
+.fade {  
+    -webkit-animation-name: fade;  
+    -webkit-animation-duration: 1.5s;  
+    animation-name: fade;  
+    animation-duration: 1.5s;  
+}  
+@-webkit-keyframes fade {  
+    from {  
+        opacity: .4  
+    }  
+    to {  
+        opacity: 1  
+    }  
+}  
+
+@keyframes fade {  
+    from {  
+        opacity: .4  
+    }  
+    to {  
+        opacity: 1  
+    }  
+}  
+#work{
+    color:#ccc;
+    width: 100%;
+    padding-left: 15px;
+
+}
+#work h2{
+    font-size: 1em;
+    text-decoration: underline #cc3f0c;
+    text-underline-position: under;
+}
+
+#work ul{
+    list-style: none;
+}
+
+
+/*===FOOTER===*/
+
+footer {
+    height: auto;
+    width:100%;
+    border-top: 3px solid #cc3f0c;
+    line-height: 1em;
+    padding: 1em 0;
+    text-align: center;
+  
+  }
+  #contact p{
+    color: #cc3f0c;
+    font-weight: 900;
+    display: inline-block;
+    margin: auto;
+ 
+   
+  }
+.email{
+    color: #cc3f0c;
+    font-weight: 900;
+    display:flex;
+    display: -webkit-flex;
+    justify-content: center;
+    padding-top: 1em;
+    text-decoration:none;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media all and (min-width: 768px) {
+ body {
+     width: 100%;
+     margin: 0;
+     border: none;
+ }
+ .wrapper-content{
+   width: 100%
+}
+
+#work{
+        padding-left: 5px; 
+}
+ .car-makes, .mechanical, .body-repair {
+    flex: 1 50%;
+    color: #fff;
+    line-height: 1.5em;
+    font-size: 1.6em;
+    width: 100%;
+    height: auto;
+    display: flex;
+ }  
+#contact p, .email{
+ font-size: 1.5em;
+display: flex;
+display: -webkit-flex;
+justify-content: center;
+}
+}
+
+/*===Desktop ==*/
+
+@media (min-width: 940px){
+ 
+.wrapper-content{ 
+    max-width: none;
+}
+
+.logo{
+    display:inline-block;
+    width: 40%;
+    height:100%;
+    margin:0 auto;
+}
+
+.main-body h1{
+    font-size: 3em;
+}
+
+.slidercontainer{
+    border: 5px solid #ccc;
+    margin-bottom: 20px;
+}
+#work{
+    height: 100%;
+    padding: 0;
+    margin-top: 20px 0 30px 0px;
+    display: flex;
+    justify-content: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
+    justify-content:space-between; 
+ } 
+
+
+
+.car-makes, .mechanical, .body-repair{
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin: 10px auto;
+}
+
+.car-makes{
+    padding-left: 200px;
+}
+
+
+#contact p, .email{
+    display: inline;
+    font-size: 1em;
+   line-height: 1.5em;
+   }
+
+.email{
+    padding-left: 350px;
+}
+}
+
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+
