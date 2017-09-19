@@ -255,7 +255,12 @@ h1{
 
 /* Modal Body */
 .modal-body {
+    font-size: 1em;
     padding: 2px 16px;
+}
+
+.modal-body p {
+    color: #272838;
 }
 .modal-body .email{
     padding-left: 0;
@@ -283,6 +288,7 @@ h1{
     animation-name: animatetop;
     animation-duration: 0.4s
 }
+
 
 /* Add Animation */
 @-webkit-keyframes animatetop {
