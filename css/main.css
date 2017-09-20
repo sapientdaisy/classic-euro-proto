@@ -247,7 +247,7 @@ h1{
 /* Modal Body */
 .modal-body {
     font-size: 1em;
-    padding: 2px 16px;
+    padding: 2px 1em;
 }
 
 .modal-body p {
