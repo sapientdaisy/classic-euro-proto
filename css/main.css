@@ -252,9 +252,12 @@ h1{
 
 .modal-body p {
     color: #272838;
+    pointer-events: none;
     text-decoration: none;
 }
 .modal-body .email{
+    overflow-wrap: break-word;
+    word-wrap: break-word;
     padding-left: 0;
     text-decoration: none;
     text-transform: none;
