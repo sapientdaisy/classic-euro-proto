@@ -31,7 +31,7 @@
  * Customize the background color to match your design.
  */
 
-::-moz-selection {
+::-moz-selection img {
     background: #b3d4fc;
     text-shadow: none;
 }
@@ -87,16 +87,7 @@ textarea {
     resize: vertical;
 }
 
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
 
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
 
 /* ==========================================================================
    Author's custom styles
@@ -261,9 +252,11 @@ h1{
 
 .modal-body p {
     color: #272838;
+    text-decoration: none;
 }
 .modal-body .email{
     padding-left: 0;
+    text-decoration: none;
     text-transform: none;
 }
 /* Modal Footer */
