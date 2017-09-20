@@ -264,7 +264,7 @@ h1{
 }
 /* Modal Footer */
 .modal-footer {
-    padding: 10px 16px;
+    padding: 1em 1em;
     background-color: #272838;
     color: #ccc;
 }
